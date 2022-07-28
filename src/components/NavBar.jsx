@@ -26,20 +26,20 @@ const NavBar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a>Portfolio</a>
+              <a href="/#">Add Request</a>
             </li>
             <li>
-              <a>About</a>
+              <a href="/#">Sign Out</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl">
-          Firebase Functions Learning
+        <a href="/" className="btn btn-ghost normal-case text-xl">
+          Firebase Functions
         </a>
       </div>
       <div className="navbar-end">
