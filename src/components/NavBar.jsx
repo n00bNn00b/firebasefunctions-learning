@@ -1,11 +1,12 @@
 import React from "react";
+import CourseModal from "./CourseModal";
 
 const NavBar = () => {
   return (
     <nav className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabindex="0" className="btn btn-ghost btn-circle">
+          <label tabIndex="0" className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -29,7 +30,9 @@ const NavBar = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/#">Add Request</a>
+              <label htmlFor="courseModal" className="modal-button">
+                Add Request
+              </label>
             </li>
             <li>
               <a href="/#">Sign Out</a>
@@ -79,6 +82,7 @@ const NavBar = () => {
           </div>
         </button>
       </div>
+      <CourseModal />
     </nav>
   );
 };
