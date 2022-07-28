@@ -1,0 +1,57 @@
+[debug] [2022-07-28T12:20:09.807Z] ----------------------------------------------------------------------
+[debug] [2022-07-28T12:20:09.809Z] Command:       D:\Program Files\Nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-07-28T12:20:09.809Z] CLI Version:   11.4.0
+[debug] [2022-07-28T12:20:09.809Z] Platform:      win32
+[debug] [2022-07-28T12:20:09.809Z] Node Version:  v16.14.0
+[debug] [2022-07-28T12:20:09.810Z] Time:          Thu Jul 28 2022 18:20:09 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-28T12:20:09.810Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-28T12:20:09.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-28T12:20:09.869Z] > authorizing via signed-in user (dewanreal@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-07-28T12:20:09.903Z] [hub] writing locator at C:\Users\Admin\AppData\Local\Temp\hub-cloudfunctions-learning.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-07-28T12:20:09.928Z] defaultcredentials: writing to file C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json
+[debug] [2022-07-28T12:20:09.929Z] Setting GAC to C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Admin\\AppData\\Roaming\\firebase\\dewanreal_gmail_com_application_default_credentials.json"}}
+[debug] [2022-07-28T12:20:09.931Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig [none]
+[debug] [2022-07-28T12:20:10.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig 200
+[debug] [2022-07-28T12:20:10.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig {"projectId":"cloudfunctions-learning","storageBucket":"cloudfunctions-learning.appspot.com","locationId":"asia-east2"}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-07-28T12:20:10.414Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-28T12:20:10.414Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-28T12:20:10.414Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Admin\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-07-28T12:20:10.541Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "E:\Coding\Firebase\firebase-functions\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\Coding\\Firebase\\firebase-functions\\functions\" for Cloud Functions..."}}
+[debug] [2022-07-28T12:20:10.689Z] Validating nodejs source
+[debug] [2022-07-28T12:20:12.498Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-28T12:20:12.498Z] Building nodejs source
+[debug] [2022-07-28T12:20:12.498Z] Analyzing nodejs backend spec
+[debug] [2022-07-28T12:20:12.499Z] Could not find functions.yaml. Must use http discovery
