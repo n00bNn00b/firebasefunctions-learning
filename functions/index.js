@@ -50,6 +50,6 @@ app.post("/course", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
-app.listen(port, () => {
-  console.log("listening to the port: ", port);
-});
+// app.listen(port, () => {
+//   console.log("listening to the port: ", port);
+// });

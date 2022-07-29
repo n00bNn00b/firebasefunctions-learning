@@ -1,49 +1,50 @@
-[debug] [2022-07-29T03:48:03.432Z] ----------------------------------------------------------------------
-[debug] [2022-07-29T03:48:03.433Z] Command:       D:\Program Files\Nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2022-07-29T03:48:03.433Z] CLI Version:   11.4.0
-[debug] [2022-07-29T03:48:03.434Z] Platform:      win32
-[debug] [2022-07-29T03:48:03.434Z] Node Version:  v16.14.0
-[debug] [2022-07-29T03:48:03.434Z] Time:          Fri Jul 29 2022 09:48:03 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-07-29T03:48:03.435Z] ----------------------------------------------------------------------
+[debug] [2022-07-29T03:51:58.384Z] ----------------------------------------------------------------------
+[debug] [2022-07-29T03:51:58.385Z] Command:       D:\Program Files\Nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-07-29T03:51:58.386Z] CLI Version:   11.4.0
+[debug] [2022-07-29T03:51:58.386Z] Platform:      win32
+[debug] [2022-07-29T03:51:58.386Z] Node Version:  v16.14.0
+[debug] [2022-07-29T03:51:58.386Z] Time:          Fri Jul 29 2022 09:51:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-07-29T03:51:58.387Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-07-29T03:48:03.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-07-29T03:48:03.488Z] > authorizing via signed-in user (dewanreal@gmail.com)
-[debug] [2022-07-29T03:48:03.569Z] java version "17.0.1" 2021-10-19 LTS
+[debug] [2022-07-29T03:51:58.434Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-07-29T03:51:58.438Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-29T03:51:58.438Z] > authorizing via signed-in user (dewanreal@gmail.com)
+[debug] [2022-07-29T03:51:58.519Z] java version "17.0.1" 2021-10-19 LTS
 
-[debug] [2022-07-29T03:48:03.570Z] Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
+[debug] [2022-07-29T03:51:58.520Z] Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
 Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
 
-[debug] [2022-07-29T03:48:03.594Z] Parsed Java major version: 17
+[debug] [2022-07-29T03:51:58.530Z] Parsed Java major version: 17
 [info] i  emulators: Starting emulators: functions, firestore, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, hosting"}}
-[debug] [2022-07-29T03:48:03.616Z] [hub] writing locator at C:\Users\Admin\AppData\Local\Temp\hub-cloudfunctions-learning.json
+[debug] [2022-07-29T03:51:58.552Z] [hub] writing locator at C:\Users\Admin\AppData\Local\Temp\hub-cloudfunctions-learning.json
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, pubsub, storage\u001b[22m"}}
 [info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-07-29T03:48:03.640Z] defaultcredentials: writing to file C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json
-[debug] [2022-07-29T03:48:03.641Z] Setting GAC to C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Admin\\AppData\\Roaming\\firebase\\dewanreal_gmail_com_application_default_credentials.json"}}
-[debug] [2022-07-29T03:48:03.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig [none]
-[debug] [2022-07-29T03:48:04.293Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig 200
-[debug] [2022-07-29T03:48:04.293Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig {"projectId":"cloudfunctions-learning","storageBucket":"cloudfunctions-learning.appspot.com","locationId":"asia-east2"}
-[debug] [2022-07-29T03:48:04.302Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2022-07-29T03:48:04.302Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-07-29T03:48:04.302Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Admin\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.4.jar","--host","localhost","--port",8080,"--rules","E:\\Coding\\Firebase\\firebase-functions\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.4.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"E:\\\\Coding\\\\Firebase\\\\firebase-functions\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[debug] [2022-07-29T03:51:58.574Z] defaultcredentials: writing to file C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json
+[debug] [2022-07-29T03:51:58.575Z] Setting GAC to C:\Users\Admin\AppData\Roaming\firebase\dewanreal_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Admin\\AppData\\Roaming\\firebase\\dewanreal_gmail_com_application_default_credentials.json"}}
+[debug] [2022-07-29T03:51:58.577Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig [none]
+[debug] [2022-07-29T03:51:59.266Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig 200
+[debug] [2022-07-29T03:51:59.266Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/adminSdkConfig {"projectId":"cloudfunctions-learning","storageBucket":"cloudfunctions-learning.appspot.com","locationId":"asia-east2"}
+[debug] [2022-07-29T03:51:59.275Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-07-29T03:51:59.275Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-29T03:51:59.275Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Admin\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.4.jar","--host","localhost","--port",8000,"--rules","E:\\Coding\\Firebase\\firebase-functions\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.4.jar\",\"--host\",\"localhost\",\"--port\",8000,\"--rules\",\"E:\\\\Coding\\\\Firebase\\\\firebase-functions\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
 [info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[debug] [2022-07-29T03:48:05.343Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites 
-[debug] [2022-07-29T03:48:07.138Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites 200
-[debug] [2022-07-29T03:48:07.138Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites {"sites":[{"name":"projects/cloudfunctions-learning/sites/cloudfunctions-learning","defaultUrl":"https://cloudfunctions-learning.web.app","appId":"1:931151792315:web:5d2331288d3a85e686819e","type":"DEFAULT_SITE"}]}
-[debug] [2022-07-29T03:48:07.138Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config [none]
-[debug] [2022-07-29T03:48:08.391Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config 200
-[debug] [2022-07-29T03:48:08.391Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config {"projectId":"cloudfunctions-learning","appId":"1:931151792315:web:5d2331288d3a85e686819e","storageBucket":"cloudfunctions-learning.appspot.com","locationId":"asia-east2","apiKey":"AIzaSyDcz0hHpwWQJifCvXH_xRwvzB7sqqfatCI","authDomain":"cloudfunctions-learning.firebaseapp.com","messagingSenderId":"931151792315"}
+[debug] [2022-07-29T03:52:00.313Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites 
+[debug] [2022-07-29T03:52:02.063Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites 200
+[debug] [2022-07-29T03:52:02.064Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/cloudfunctions-learning/sites {"sites":[{"name":"projects/cloudfunctions-learning/sites/cloudfunctions-learning","defaultUrl":"https://cloudfunctions-learning.web.app","appId":"1:931151792315:web:5d2331288d3a85e686819e","type":"DEFAULT_SITE"}]}
+[debug] [2022-07-29T03:52:02.064Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config [none]
+[debug] [2022-07-29T03:52:03.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config 200
+[debug] [2022-07-29T03:52:03.328Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cloudfunctions-learning/webApps/1:931151792315:web:5d2331288d3a85e686819e/config {"projectId":"cloudfunctions-learning","appId":"1:931151792315:web:5d2331288d3a85e686819e","storageBucket":"cloudfunctions-learning.appspot.com","locationId":"asia-east2","apiKey":"AIzaSyDcz0hHpwWQJifCvXH_xRwvzB7sqqfatCI","authDomain":"cloudfunctions-learning.firebaseapp.com","messagingSenderId":"931151792315"}
 [info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
 [info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
-[debug] [2022-07-29T03:48:08.413Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-07-29T03:48:08.413Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-07-29T03:48:08.413Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Admin\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-07-29T03:52:03.348Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-29T03:52:03.348Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-29T03:52:03.348Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Admin\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Admin\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-07-29T03:48:08.535Z] Web / API server started at localhost:4000
+[debug] [2022-07-29T03:52:03.470Z] Web / API server started at localhost:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
 [info] i  functions: Watching "E:\Coding\Firebase\firebase-functions\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\Coding\\Firebase\\firebase-functions\\functions\" for Cloud Functions..."}}
-[debug] [2022-07-29T03:48:08.688Z] Validating nodejs source
-[debug] [2022-07-29T03:48:10.575Z] > [functions] package.json contents: {
+[debug] [2022-07-29T03:52:03.615Z] Validating nodejs source
+[debug] [2022-07-29T03:52:05.380Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -70,29 +71,35 @@ Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
   },
   "private": true
 }
-[debug] [2022-07-29T03:48:10.575Z] Building nodejs source
-[debug] [2022-07-29T03:48:10.575Z] Analyzing nodejs backend spec
-[debug] [2022-07-29T03:48:10.576Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-07-29T03:48:10.743Z] Serving at port 9005
+[debug] [2022-07-29T03:52:05.380Z] Building nodejs source
+[debug] [2022-07-29T03:52:05.380Z] Analyzing nodejs backend spec
+[debug] [2022-07-29T03:52:05.381Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-29T03:52:05.551Z] Serving at port 9005
 
-[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
-[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
-[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
-[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
-[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
-[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
-[warn] !  Firestore Emulator has exited upon receiving signal: SIGINT 
-[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
-[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
-[debug] [2022-07-29T03:48:10.870Z] FetchError: request to http://localhost:9005/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:9005
-    at ClientRequest.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1491:11)
-    at ClientRequest.emit (node:events:520:28)
-    at ClientRequest.emit (node:domain:475:12)
-    at Socket.socketErrorListener (node:_http_client:442:9)
-    at Socket.emit (node:events:520:28)
-    at Socket.emit (node:domain:475:12)
-    at emitErrorNT (node:internal/streams/destroy:157:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-    at processTicksAndRejections (node:internal/process/task_queues:83:21)
-[error] 
-[error] Error: An unexpected error has occurred.
+[debug] [2022-07-29T03:52:05.657Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-29T03:52:05.661Z] shutdown requested via /__/quitquitquit
+
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ localhost:8000 │ http://localhost:4000/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [29/Jul/2022:03:52:46 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/Jul/2022:03:52:46 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/Jul/2022:03:52:50 +0000] "GET /courses HTTP/1.1" 200 4596 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/Jul/2022:03:52:50 +0000] \"GET /courses HTTP/1.1\" 200 4596 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [29/Jul/2022:03:52:50 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/courses" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [29/Jul/2022:03:52:50 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/courses\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\""}}
+[debug] [2022-07-29T03:54:42.338Z] Received signal SIGHUP 1
