@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cloudfunctions-learning",
+  "private_key_id": "c27c94614c7e83e5ee671527c0a933f22063e53b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDRavybp5qHU8V\nnKpzsFzxC1v5QtbnqlT3cAi+23+WM+eXh0iSt913pl5Oxtbk3fiFv6v0s6VDZE65\ncZrmg5Kvah5Nji+NRmRh+t98XS2kB0VdHSH8fEwEfIGa9a2YtwSzDAxwuRzTfHiU\nTbRMGfeHDpseTBEbS64zt1NePZSn35Brv7ErjEBRmfhHNWJZdwZoYicFOJH3H4Iy\nA6NyxqsV3YIw+MEEZuD/Fe8d5XmCM2+Ft55FXZwQEaZ4NsYIEILpLRH4xjUOazA8\nNRKaFjfbs2wbPEufIZsHaizhV17D5ZNUeU4K9ZFVrNJ2IElWH0jTWBIQwyFTG37B\nkS95Qjn3AgMBAAECggEAJLMKbuTFVxItE9W+30FNJmxJG96o/x8vGtXufthH8VXN\n99eQFysBL4SQAuQx7Q+erpxoV/QPYkwO06F7SEmAHwGlslO/siCBqzx4Fip48nP/\nYFGiWo6NxuYTgakcuC/lbTUdfW388e5Zxx2Xfhn/QF3JX3dSW7vsgIG65GJUdvwk\nO7jlxd96bl2mmURL0F0fhy+fy9vgfidyvavpJ6t/vJNNWpEjxrzb9doA3NOUDMwi\nD2Hu3emOWmsjZdh2j+WKShlmfA2rEFmz+xRHaV03Cncrv83Osbfa10DnN2VUC7B7\nt9f9qRujynPyi/mAxO52PXJ9hoEWFZcM8QUkSUcJ0QKBgQDtFoYbhMh2ZuWffdTP\n7/LUG6w34sHbK/alSZSBKe1qUXs+huy3rVT7Mcx3VIV1pZuLrX7aQVwUACgnKykn\n5cW0V/mX0xTdZQF+DPht8/kkiJ7FibQWlbhP3VA091N62Bc2Hh0nOYaYpxhzqf2J\nH8JBaN+dIj2eGsF4jQbJCVGyrwKBgQDS2T51ZiQovOo9v3xxJMNnWwHRYdzR5Ulk\nezhPABG8eT9zvbLdYke8N/PiWeZYsgClUJVqtXQRcmC4QBDfU6cbJNvr7ocwgPi0\nruN36GGyX1waQRspmDAavB3Ib8WB7ECbWb2pN3UQNTRuGKRDVNQOlp84UyrG5oVp\nKGFNogXfOQKBgBM8IZM3+Z+Jh5Wh+tMH75Z/zEAYeIvUjEUqrA6ynR1kEPCot6nL\nOTrL9n+z7sP1tKHnaIRCizrgLGHJIaSoAps4C/riWC4CFNXqLXmWMp9hKihynJa8\nfOCV3vz9F9u+jluIo+rbwuy9mcFAiF5IolT2MjYoYgFiwFGMd4F17RfnAoGAUkcg\nDmPrXFJL/giJIQW9ksl6riBIMUgOGb3TvVBDm46c6iducuF1KMeUzhFSx+2+PsRx\nahCg2GYPxBaL/vn/zaHWh/yumIjbhHZyoUn3RcncgQpC9TpEG0qpPJwRMJ/mnjio\nwC256rc4XHYVM4kYrxCr1SjvGmq+SMjPH6JINFECgYEAkMHYgNPJ88LXMCeAwpJf\nHHZSLI8eLntHccPZ8/SAe0c+mBLEl5h6TNoe8hFPvNG5x8DCLYvcwyVwh4w/tDZG\n8hgUwsNHKca6YUTycb4BxXspTSgHTCQepWz30NaQmqA1tFR28+Xgt10sm3Im0n0s\nQVsYvBJsmaxvAC0ozPDGoL4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ro88c@cloudfunctions-learning.iam.gserviceaccount.com",
+  "client_id": "110302220051463991680",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ro88c%40cloudfunctions-learning.iam.gserviceaccount.com"
+}

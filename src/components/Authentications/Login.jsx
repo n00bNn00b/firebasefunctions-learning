@@ -1,15 +1,18 @@
 import React from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 
-const Register = () => {
-  const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+const Login = () => {
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+
+  const loginHandler = (e) => {
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    signInWithEmailAndPassword(email, password);
+  };
   if (error) {
     return (
       <div>
@@ -17,23 +20,19 @@ const Register = () => {
       </div>
     );
   }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
   if (user) {
     navigate("/");
   }
-  const registerHandler = (e) => {
-    const email = e.target.email.value;
-    const password = e.target.password.value;
-
-    createUserWithEmailAndPassword(email, password);
-  };
-
   return (
     <form
       className="card w-96 bg-base-100 shadow-2xl my-20 flex mx-auto"
-      onSubmit={registerHandler}
+      onSubmit={loginHandler}
     >
       <div className="card-body">
-        <h2 className="text-center text-lg font-bold">Register</h2>
+        <h2 className="text-center text-lg font-bold">Login</h2>
         {/* inputs */}
         <div className="form-control w-full max-w-xs">
           <label className="label">
@@ -65,19 +64,19 @@ const Register = () => {
           </label>
         </div>
         <p>
-          <span>Already have an account?</span>{" "}
-          <Link to="/login" className="text-primary">
-            Login
+          <span>Don't have an account? </span>
+          <Link to="/register" className="text-primary">
+            Register
           </Link>
         </p>
       </div>
       <input
         className="btn btn-primary flex mx-auto my-5"
         type="submit"
-        value="Register"
+        value="Login"
       />
     </form>
   );
 };
 
-export default Register;
+export default Login;
