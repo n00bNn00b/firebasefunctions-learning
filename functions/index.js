@@ -7,8 +7,7 @@ const admin = require("firebase-admin");
 //   console.log("user created", user.email, user.uid);
 // });
 const serviceAccount = require("./functionsCloud.json");
-const { response } = require("express");
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
