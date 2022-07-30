@@ -1,18 +1,21 @@
-const functions = require("firebase-functions");
+// const functions = require("firebase-functions");
 const express = require("express");
 const app = express();
 const admin = require("firebase-admin");
-// auth triggers
-// exports.newUserSignup = functions.auth.user().onCreate((user) => {
-//   console.log("user created", user.email, user.uid);
-// });
-const serviceAccount = require("./functionsCloud.json");
-const port = process.env.PORT || 8080;
+const firebaseConfig = require("./functionsCloud.json");
+const cors = require("cors");
+
+// firebase config initialization
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert(firebaseConfig),
 });
 const db = admin.firestore();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+const port = process.env.PORT || 5000;
 
 app.get("/courses", async (req, res) => {
   try {
@@ -50,6 +53,6 @@ app.post("/course", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
-// app.listen(port, () => {
-//   console.log("listening to the port: ", port);
-// });
+app.listen(port, () => {
+  console.log("listening to the port: ", port);
+});

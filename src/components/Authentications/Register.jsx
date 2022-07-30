@@ -1,6 +1,6 @@
 import React from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import { auth } from "../../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
