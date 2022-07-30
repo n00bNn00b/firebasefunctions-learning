@@ -1,9 +1,11 @@
 import { collection, getDocs, updateDoc, doc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { FaArrowCircleUp } from "react-icons/fa";
-import { db } from "../firebase.init";
+import { auth, db } from "../firebase.init";
 
 const Courses = () => {
+  const [user] = useAuthState(auth);
   const [courses, setCourses] = useState([]);
   const coursesCollection = collection(db, "courses");
 
@@ -32,14 +34,26 @@ const Courses = () => {
 
             <div className="flex justify-end">
               <span className="mx-5">{course.vote}</span>
-              <button
-                onClick={() => {
-                  voteIncrease(course.id, course.vote);
-                }}
-                className="mx-5 text-xl btn btn-accent"
-              >
-                <FaArrowCircleUp />
-              </button>
+              {user ? (
+                <button
+                  onClick={() => {
+                    voteIncrease(course.id, course.vote);
+                  }}
+                  className="mx-5 text-xl btn btn-accent"
+                >
+                  <FaArrowCircleUp />
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    voteIncrease(course.id, course.vote);
+                  }}
+                  className="mx-5 text-xl btn btn-accent"
+                  disabled
+                >
+                  <FaArrowCircleUp />
+                </button>
+              )}
             </div>
           </div>
         </div>

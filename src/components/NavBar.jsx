@@ -38,11 +38,13 @@ const NavBar = () => {
             <li>
               <a href="/">Home</a>
             </li>
-            <li>
-              <label htmlFor="courseModal" className="modal-button">
-                Add Request
-              </label>
-            </li>
+            {user && (
+              <li>
+                <label htmlFor="courseModal" className="modal-button">
+                  Add Request
+                </label>
+              </li>
+            )}
             <li>
               {!user ? (
                 <Link to="/login">Sign In</Link>
