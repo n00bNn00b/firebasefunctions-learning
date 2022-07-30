@@ -7,18 +7,22 @@ const CourseModal = () => {
 
   const coursesCollection = collection(db, "courses");
 
-  const registerCourse = async () => {
+  const registerCourse = async (e) => {
+    e.preventDefault();
+    const courseName = e.target.courseName.value;
+    setCourseName(courseName);
     await addDoc(coursesCollection, {
       courseName: courseName,
       vote: Number(0),
     });
+    e.target.reset();
   };
 
   return (
     <div>
       <input type="checkbox" id="courseModal" className="modal-toggle" />
       <div className="modal">
-        <div className="modal-box relative">
+        <form onSubmit={registerCourse} className="modal-box relative">
           <label
             htmlFor="courseModal"
             className="btn btn-sm btn-circle absolute right-2 top-2"
@@ -32,15 +36,12 @@ const CourseModal = () => {
             type="text"
             placeholder="Request..."
             className="input input-bordered input-primary w-full max-w-xs flex mx-auto"
-            onChange={(e) => setCourseName(e.target.value)}
+            name="courseName"
           />
-          <button
-            className="flex mx-auto mt-5 btn btn-primary"
-            onClick={registerCourse}
-          >
+          <button className="flex mx-auto mt-5 btn btn-primary">
             Submit Request
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
